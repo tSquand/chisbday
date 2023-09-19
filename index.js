@@ -10,6 +10,15 @@ const jackBananaImage = document.getElementById('jackbanana');
 const caption = document.querySelector("figcaption");
 const thirdButton = document.getElementById('third-button');
 const pukeText = document.getElementById('puke');
+const spinningImage = document.getElementById('spinningImage');
+
+spinningImage.addEventListener("click", function () {
+    if (spinningImage.style.display === "none") {
+        spinningImage.style.display = "inline";
+    } else {
+        spinningImage.style.display = "none";
+    }
+})
 
 // Add a click event listener to the button
 firstButton.addEventListener('click', function() {
